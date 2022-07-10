@@ -1,5 +1,4 @@
 # VicReg loss and JEPA for Sentence Embeddings
-=================================
 
 This repo is a sketch illustrating how a Joint-embedding predictive architecture (JEPA) might be used for sequence modeling.
 Specifically it is a sketch of how a JEPA trained wth VicReg loss could be used to produce sentence embeddings.
@@ -71,5 +70,7 @@ This is mentioned as potentially necessary in both:
 Without auxiliary objectives that speak to **how you'd like your embeddings to be meaningful**, the embeddings could be highly informative, but not under conditions
 that are useful to downstream tasks. I'd suggest exploring lingustically informated pretext tasks like the following:
 - Can the projected embeddings predict language transformations like synonym/hyponym/antonym swap, masking, noise corruption.
+
+Without that work, I think the only reason to further explore JEPA with VICReg for sentence transformers is to explore sample effeciency and smaller model sizes.
 
 If you'd like to explore this conjecture with a collaborator feel free to let me know as I am actively investigating it!
