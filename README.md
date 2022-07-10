@@ -71,6 +71,9 @@ Without auxiliary objectives that speak to **how you'd like your embeddings to b
 that are useful to downstream tasks. I'd suggest exploring lingustically informated pretext tasks like the following:
 - Can the projected embeddings predict language transformations like synonym/hyponym/antonym swap, masking, noise corruption.
 
+With other models, we get a pretext objective that is meaningful already - Denoising, Masking, etc.
+While we can apply these pretext tasks to the JEPA, since it's not generative it's a bit harder to imagine them being as powerful as they are for generative models.
+
 Without that work, I think the only reason to further explore JEPA with VICReg for sentence transformers is to explore sample effeciency and smaller model sizes.
 
 If you'd like to explore this conjecture with a collaborator feel free to let me know as I am actively investigating it!
