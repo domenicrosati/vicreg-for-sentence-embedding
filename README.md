@@ -39,7 +39,7 @@ The best result I was able to get through fiddling with hyperparameters was:
 | Model | MAP-Score on test set |
 | ---- | :----: |
 | TSDAE (bert-base-uncased) | 59.4 |
-| JEPA w VicREG (bert-base-uncased) | 56.04 |
+| JEPA w VicREG (bert-base-uncased) | 56.0 |
 | **pretrained SentenceTransformer models** | |
 | nli-bert-base | 50.7 |
 | paraphrase-distilroberta-base-v1 | 54.8 |
