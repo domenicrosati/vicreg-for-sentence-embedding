@@ -1,5 +1,4 @@
 # VicReg loss and JEPA for Sentence Embeddings
-=================================
 
 This repo is a sketch illustrating how a Joint-embedding predictive architecture (JEPA) might be used for sequence modeling.
 Specifically it is a sketch of how a JEPA trained wth VicReg loss could be used to produce sentence embeddings.
