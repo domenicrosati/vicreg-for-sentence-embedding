@@ -1,4 +1,5 @@
 # VicReg loss and JEPA for Sentence Embeddings
+=================================
 
 This repo is a sketch illustrating how a Joint-embedding predictive architecture (JEPA) might be used for sequence modeling.
 Specifically it is a sketch of how a JEPA trained wth VicReg loss could be used to produce sentence embeddings.
@@ -31,7 +32,22 @@ While the JEPA works and produces results similar or slighly better than MLM.
 (1) **It is not clear if the JEPA as formulated is better than MLM**.
 (2) **I have found no configuration that beats contrastive methods or TSDAE.**
 So I have not reported the results here since they are not that meaningful, other than JEPA works "OK".
-The best result I was able to get through fiddling with hyperparameters was about **56 MAP** on Ask Ubuntu test.
+The best result I was able to get through fiddling with hyperparameters was:
+
+**56.04 MAP** on Ask Ubuntu test.
+
+| Model | MAP-Score on test set |
+| ---- | :----: |
+| TSDAE (bert-base-uncased) | 59.4 |
+| JEPA w VicREG (bert-base-uncased) | 56.04 |
+| **pretrained SentenceTransformer models** | |
+| nli-bert-base | 50.7 |
+| paraphrase-distilroberta-base-v1 | 54.8 |
+| stsb-roberta-large | 54.6 |
+
+----------------------
+
+
 You can also reset the bert-base-uncased model and finetune with JEPA.
 Surprisingly, the JEPA works about the same as MLM under the STSb task.
 
