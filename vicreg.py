@@ -60,6 +60,7 @@ s
 
 
 
+# loss has been adapted from https://github.com/facebookresearch/vicreg
 sim_loss = nn.MSELoss()
 
 # variance loss
