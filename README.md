@@ -7,16 +7,16 @@ Where X and X' are a text sequence and a view of a text sequence X'.
 The goal is that the trained encoder should minimize the Energy of X,X'.
 
 Please see the following papers for background on the JEPA:
-- (A Path Towards Autonomous Machine Intelligence)[https://openreview.net/pdf?id=BZ5a1r-kVsf]
-- (VICReg: Variance-Invariance-Covariance Regularization for Self-Supervised Learning)[https://openreview.net/forum?id=xm6YD62D1Ub]
-- (Intra-Instance VICReg: Bag of Self-Supervised Image Patch Embedding)[https://arxiv.org/abs/2206.08954]
+- [A Path Towards Autonomous Machine Intelligence](https://openreview.net/pdf?id=BZ5a1r-kVsf)
+- [VICReg: Variance-Invariance-Covariance Regularization for Self-Supervised Learning](https://openreview.net/forum?id=xm6YD62D1Ub)
+- [Intra-Instance VICReg: Bag of Self-Supervised Image Patch Embedding](https://arxiv.org/abs/2206.08954)
 
 **Note:** If you use the code from this repo or inspired by it, please let me know!
 I'd love to hear from you and work on this further. A mention in acknowledgements is also appreciated ;) .
 
 ## Details
 
-See `vicreg.py` which implements the JEPA and VicReg loss for the (sentence transformer framework)[https://www.sbert.net/].
+See `vicreg.py` which implements the JEPA and VicReg loss for the [sentence transformer framework](https://www.sbert.net/).
 Specifically please see the following components:
 - The expander (which provides a projection on the embedding space to compute loss)
 - VicReg loss
@@ -64,8 +64,8 @@ While the benefits of JEPA are clear in the language domain:
 
 My conjecture is that, in the language domain, the VICReg loss is going to need auxiliary pretext tasks in order to align the embeddings with utility for language.
 This is mentioned as potentially necessary in both:
-- (A Path Towards Autonomous Machine Intelligence)[https://openreview.net/pdf?id=BZ5a1r-kVsf]
-- (VICReg: Variance-Invariance-Covariance Regularization for Self-Supervised Learning)[https://openreview.net/forum?id=xm6YD62D1Ub]
+- [A Path Towards Autonomous Machine Intelligence](https://openreview.net/pdf?id=BZ5a1r-kVsf)
+- [VICReg: Variance-Invariance-Covariance Regularization for Self-Supervised Learning](https://openreview.net/forum?id=xm6YD62D1Ub)
 
 Without auxiliary objectives that speak to **how you'd like your embeddings to be meaningful**, the embeddings could be highly informative, but not under conditions
 that are useful to downstream tasks. I'd suggest exploring lingustically informated pretext tasks like the following:
